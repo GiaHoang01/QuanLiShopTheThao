@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3244465D-4026-405B-9DBD-AD4C2ACA8170}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Sportwear_Shop</RootNamespace>
+    <AssemblyName>Project_Sportwear_Shop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountModule.Designer.cs">
+      <DependentUpon>AccountModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEditSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditSanPham.Designer.cs">
+      <DependentUpon>AddEditSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHangForm.Designer.cs">
+      <DependentUpon>BanHangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BanHangModule2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BanHangModule2.Designer.cs">
+      <DependentUpon>BanHangModule2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillFromrpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillFromrpt.Designer.cs">
+      <DependentUpon>BillFromrpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillList.Designer.cs">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BillsPhieuNhap.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="BillsPhieuNhap.Designer.cs">
+      <DependentUpon>BillsPhieuNhap.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ChiTietHDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietHDForm.Designer.cs">
+      <DependentUpon>ChiTietHDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietNhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietNhapHang.Designer.cs">
+      <DependentUpon>ChiTietNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPN.Designer.cs">
+      <DependentUpon>ChiTietPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChonNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonNhaCungCap.Designer.cs">
+      <DependentUpon>ChonNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectForm.Designer.cs">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
+    <Compile Include="DanhSachPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachPhieuNhap.Designer.cs">
+      <DependentUpon>DanhSachPhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCCForm.Designer.cs">
+      <DependentUpon>NCCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCCModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NCCModule.Designer.cs">
+      <DependentUpon>NCCModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienForm.Designer.cs">
+      <DependentUpon>NhanVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVienModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVienModule.Designer.cs">
+      <DependentUpon>NhanVienModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHang.Designer.cs">
+      <DependentUpon>NhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OderDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OderDelivery.Designer.cs">
+      <DependentUpon>OderDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPhamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanPhamForm.Designer.cs">
+      <DependentUpon>SanPhamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanPhamNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SanPhamNhap.Designer.cs">
+      <DependentUpon>SanPhamNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeForm.Designer.cs">
+      <DependentUpon>ThongKeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangChuForm.Designer.cs">
+      <DependentUpon>TrangChuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucProduct.Designer.cs">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountModule.resx">
+      <DependentUpon>AccountModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEditSanPham.resx">
+      <DependentUpon>AddEditSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHangForm.resx">
+      <DependentUpon>BanHangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BanHangModule2.resx">
+      <DependentUpon>BanHangModule2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillFromrpt.resx">
+      <DependentUpon>BillFromrpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillList.resx">
+      <DependentUpon>BillList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillsPhieuNhap.resx">
+      <DependentUpon>BillsPhieuNhap.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietHDForm.resx">
+      <DependentUpon>ChiTietHDForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietNhapHang.resx">
+      <DependentUpon>ChiTietNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietPN.resx">
+      <DependentUpon>ChiTietPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChonNhaCungCap.resx">
+      <DependentUpon>ChonNhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectForm.resx">
+      <DependentUpon>ConnectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachPhieuNhap.resx">
+      <DependentUpon>DanhSachPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCCForm.resx">
+      <DependentUpon>NCCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NCCModule.resx">
+      <DependentUpon>NCCModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienForm.resx">
+      <DependentUpon>NhanVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVienModule.resx">
+      <DependentUpon>NhanVienModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHang.resx">
+      <DependentUpon>NhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OderDelivery.resx">
+      <DependentUpon>OderDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPhieuNhap.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Recipt.rdlc" />
+    <EmbeddedResource Include="SanPhamForm.resx">
+      <DependentUpon>SanPhamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPhamNhap.resx">
+      <DependentUpon>SanPhamNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeForm.resx">
+      <DependentUpon>ThongKeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChuForm.resx">
+      <DependentUpon>TrangChuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucProduct.resx">
+      <DependentUpon>ucProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\AccountForm.datasource" />
+    <None Include="Properties\DataSources\AccountModule.datasource" />
+    <None Include="Properties\DataSources\AddEditSanPham.datasource" />
+    <None Include="Properties\DataSources\BanHangForm.datasource" />
+    <None Include="Properties\DataSources\BanHangModule2.datasource" />
+    <None Include="Properties\DataSources\BillFromrpt.datasource" />
+    <None Include="Properties\DataSources\BillList.datasource" />
+    <None Include="Properties\DataSources\BillsPhieuNhap.datasource" />
+    <None Include="Properties\DataSources\ChiTietHDForm.datasource" />
+    <None Include="Properties\DataSources\ChiTietNhapHang.datasource" />
+    <None Include="Properties\DataSources\ChiTietPN.datasource" />
+    <None Include="Properties\DataSources\ChonNhaCungCap.datasource" />
+    <None Include="Properties\DataSources\Connection.datasource" />
+    <None Include="Properties\DataSources\DanhSachPhieuNhap.datasource" />
+    <None Include="Properties\DataSources\LoginForm.datasource" />
+    <None Include="Properties\DataSources\MainForm.datasource" />
+    <None Include="Properties\DataSources\NCCForm.datasource" />
+    <None Include="Properties\DataSources\NCCModule.datasource" />
+    <None Include="Properties\DataSources\NhanVienForm.datasource" />
+    <None Include="Properties\DataSources\NhanVienModule.datasource" />
+    <None Include="Properties\DataSources\NhapHang.datasource" />
+    <None Include="Properties\DataSources\OderDelivery.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Project_Sportwear_Shop.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Project_Sportwear_Shop.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\SanPhamForm.datasource" />
+    <None Include="Properties\DataSources\SanPhamNhap.datasource" />
+    <None Include="Properties\DataSources\SplashForm.datasource" />
+    <None Include="Properties\DataSources\TrangChuForm.datasource" />
+    <None Include="Properties\DataSources\ucProduct.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Eye1.png" />
+    <Content Include="Images\icons8-add-administrator-26.png" />
+    <Content Include="Images\icons8-reset-26 %281%29.png" />
+    <Content Include="Images\icons8-trash-can-26.png" />
+    <Content Include="Images\icons8-wrench-26.png" />
+    <Content Include="Images\logo.jpg" />
+    <None Include="Images\Print.png" />
+    <Content Include="Images\trangchu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
